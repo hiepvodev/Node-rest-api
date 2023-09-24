@@ -85,17 +85,6 @@ exports.getUserStatus = async (req, res, next) => {
   }
 };
 
-exports.test = async (req, res, next) => {
-  try {
-    res.status(200).json({ status: true });
-  } catch (err) {
-    if (!err.statusCode) {
-      err.statusCode = 500;
-    }
-    next(err);
-  }
-};
-
 exports.updateUserStatus = async (req, res, next) => {
   const newStatus = req.body.status;
   try {
