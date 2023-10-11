@@ -4,7 +4,7 @@
   "description": "Complete Node.js Guide",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "NODE_ENV=production MONGO_USER=vanhiep2102 MONGO_PASSWORD=7Nqx5OwbIYsGoSGi MONGO_DEFAULT_DATABASE=shop STRIPE_KEY=sk_test_T8OE02SHDZWLwk4TYtrWlsat node app.js",
     "start-server": "node app.js",
     "start:dev": "nodemon app.js"
@@ -17,6 +17,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "chai": "^4.3.10",
     "compression": "^1.7.4",
     "connect-flash": "^0.1.1",
     "connect-mongodb-session": "^2.0.3",
@@ -28,6 +29,8 @@
     "express-validator": "^5.3.0",
     "helmet": "^7.0.0",
     "https": "^1.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^10.2.0",
     "mongodb": "^3.1.6",
     "mongoose": "^5.2.17",
     "morgan": "^1.10.0",
@@ -38,6 +41,7 @@
     "pdfkit": "^0.8.3",
     "pug": "^2.0.3",
     "sequelize": "^5.0.0-beta.11",
+    "sinon": "^16.1.0",
     "stripe": "^6.12.1"
   }
 }
